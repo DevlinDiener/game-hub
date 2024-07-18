@@ -15,7 +15,7 @@ const GameGrid = ({ selectedGenre }: Props) => {
   return (
     <>
       {error && <Text>{error}</Text>}
-      <SimpleGrid padding={10} columns={{ sm: 1, md: 2, lg: 3 }} spacing={4}>
+      <SimpleGrid paddingTop={4} columns={{ sm: 1, md: 2, lg: 3 }} spacing={4}>
         {isLoading &&
           skeletons.map((skeleton) => (
             <GameCardContainer key={skeleton}>
